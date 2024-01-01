@@ -1,7 +1,4 @@
 # Meta-react-capstone-Little-lemon
-
-# Meta-react-capstone
-
 # Little Lemon Restaurant Reservation Website
 
 Welcome to the Little Lemon Restaurant Reservation Website project! This web application is designed to streamline the table reservation process for our customers, providing a seamless experience for both users and restaurant staff.
