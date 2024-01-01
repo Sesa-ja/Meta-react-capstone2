@@ -9,7 +9,7 @@ const FooterPage = () => {
   };
 
   return (
-    <footer>
+    <footer style={{ backgroundColor: '#333', color: 'white', textAlign: 'center', padding: '1em' }}>
       <section>
         <div style={divStyle}>
           <img src={logo} alt="Logo" />
@@ -47,5 +47,4 @@ const FooterPage = () => {
 };
 
 export default FooterPage;
-
 

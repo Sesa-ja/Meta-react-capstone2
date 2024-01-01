@@ -1,0 +1,58 @@
+/* Nav.css */
+
+li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  nav {
+    z-index: 10001;
+  }
+  
+  .navbar {
+    padding: 10px 13%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    padding: 1em;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+  }
+  
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links.visible {
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 100%;
+    background-color: #495E57;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Add more styling as needed */

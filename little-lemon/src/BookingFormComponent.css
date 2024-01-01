@@ -1,0 +1,58 @@
+/* BookingFormComponent.css */
+
+/* General styling for labels and inputs */
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Date input specific styling */
+  #book-date {
+    background: #f7f7f7;
+  }
+  
+  /* Time input specific styling */
+  #book-time {
+    background: #f2f2f2;
+  }
+  
+  /* Guests input specific styling */
+  #book-guests {
+    background: #eaeaea;
+  }
+  
+  /* Occasions input specific styling */
+  #book-occasions {
+    background: #e0e0e0;
+  }
+  
+  /* Submit button styling */
+  .btnReceive input {
+    background: #495e57;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btnReceive input:hover {
+    background: #374542;
+  }
+  
+  /* Confirmation message styling */
+  .confirm {
+    margin-top: 20px;
+    font-size: 20px;
+    color: green;
+  }

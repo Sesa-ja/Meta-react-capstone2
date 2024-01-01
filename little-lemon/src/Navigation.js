@@ -1,30 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../src/icons_assets/Logo .svg';
+import './Navi.css'; // Import the CSS file
 
 const Navigation = () => {
-    const navbarStyle = {
-        padding: '10px 20px', // Adjusted padding for mobile
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        flexDirection: 'column', // Changed to column for mobile
-    };
+    const [isMenuVisible, setIsMenuVisible] = useState(false);
 
-    const navStyle = {
-        display: 'inline-block',
-    };
-
-    const logoContainerStyle = {
-        display: 'inline-block',
-        marginBottom: '10px', // Adjusted margin for mobile
+    const toggleMenu = () => {
+        setIsMenuVisible(!isMenuVisible);
     };
 
     return (
-        <nav style={navbarStyle}>
-            <div className="logo-container" style={logoContainerStyle}>
+        <nav className="navbar">
+            <div className="logo-container">
                 <img src={logo} alt="Logo" className="logo" />
             </div>
-            <ul style={navStyle}>
+            
+            {/* Mobile navbar */}
+            <div className="menu-icon" onClick={toggleMenu}>
+                <div className='bar'></div>
+                <div className='bar'></div>
+                <div className='bar'></div>
+            </div>
+
+            <ul className={`nav-links ${isMenuVisible ? 'visible' : ''}`}>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="/services">Services</a></li>
